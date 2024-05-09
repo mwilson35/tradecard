@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('collectionsContainer');
-    if (!container) return;  // Only runs if the container is found
+    if (!container) return;  
 
     fetch('/api/public-collections')
         .then(response => response.json())
         .then(collections => {
-            container.innerHTML = '';  // Clear existing content
+            container.innerHTML = '';  
 
             if (collections.length > 0) {
                 collections.forEach(item => {
                     const col = document.createElement('div');
-                    col.className = 'col-md-4 mb-4'; // Bootstrap grid layout for responsive columns
+                    col.className = 'col-md-4 mb-4'; 
 
                     const card = document.createElement('div');
                     card.className = 'card';
