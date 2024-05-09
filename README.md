@@ -1,12 +1,15 @@
 Running the website
 Clone the repository - https://github.com/mwilson35/tradecard
-This project uses npm to manage its dependencies as listed in the package.json file. To install these dependencies, run the following command in the project directory: npm install
-To start, in the terminal run node src/server.js
-Open a browser like Google Chrome and type in http://localhost:5500
+Opening Tradecard workspace will also work to open all files on VS code
+Ensure the machine has node.js installed
+Ensure the machine has mysql installed
+
 Database details
-host: 'localhost',
-    user: 'root',
-    database: 'tradecard',
-    password: '',
-    port: '3306'
-mysql needs to be installed on the machine. The package.json will contain all relevant dependencies.
+On mysql click "new" to create the database and name it "tradecard"
+Copy and paste from the file "tradecard40185421" and run it in mysql under the "sql" tab, in the query box
+The database will be recreated
+
+In VS code In the terminal run "npm install" 
+In the terminal type node src/server.js to start 
+
+load up localhost:5500 on google chrome and the website will function
